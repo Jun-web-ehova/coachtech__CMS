@@ -149,6 +149,7 @@ header {
 
 .single__box-content {
   padding: 40px 15px 60px;
+  color: #707070;
 }
 .single__box-img {
   width: 100%;
@@ -388,4 +389,45 @@ footer {
   font-size: 14px;
   line-height: 60px;
   color: #707070;
+}
+
+/*↓ワードプレスの追加CSS*/
+.text {
+  font-size: 16px;
+  margin: 20px 0 0;
+}
+
+.big__title {
+  margin: 25px 0 0;
+}
+@media screen and (max-width: 760px) {
+  .big__title {
+    font-size: 22px;
+  }
+}
+.small__title {
+  margin: 25px 0 0;
+}
+@media screen and (max-width: 760px) {
+  .small__title {
+    font-size: 18px;
+  }
+}
+
+.color__title {
+  margin: 30px 0 0;
+}
+.color__title strong::before {
+  content: "";
+  width: 10px;
+  height: 37px;
+  background-color: #b31566;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px 0 0;
+}
+@media screen and (max-width: 760px) {
+  .color__title strong {
+    font-size: 20px;
+  }
 }

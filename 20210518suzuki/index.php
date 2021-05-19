@@ -20,10 +20,10 @@
                   <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(); ?>
                   <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog__first.jpg">
                   <?php endif; ?>
                   <?php if (!is_category() && has_category()) : ?>
-                    <p class="new-post__card-category">
+                    <p class=" new-post__card-category">
                       <?php $postcat = get_the_category();
                       echo $postcat[0]->name; ?></p>
                   <?php endif; ?>

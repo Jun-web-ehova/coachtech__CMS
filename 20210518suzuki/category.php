@@ -21,10 +21,10 @@
                   <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(); ?>
                   <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog__first.jpg">
                   <?php endif; ?>
                 </div>
-                <p class="new-post__card-text"><?php
+                <p class=" new-post__card-text"><?php
                                                 if (mb_strlen($post->post_title, 'UTF-8') > 30) {
                                                   $title = mb_substr($post->post_title, 0, 30, 'UTF-8');
                                                   echo $title . '…';

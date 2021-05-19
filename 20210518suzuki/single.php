@@ -13,11 +13,11 @@
         <?php if (has_post_thumbnail()) : ?>
           <?php the_post_thumbnail(); ?>
         <?php else : ?>
-          <img src="<?php echo get_template_directory_uri(); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/blog__first.jpg">
         <?php endif; ?>
       </div>
 
-      <div class="single__box-content">
+      <div class=" single__box-content">
         <?php the_content(); ?>
 
       </div>
